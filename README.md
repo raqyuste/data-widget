@@ -1,5 +1,5 @@
 ## Architecture
- - `views`: the visual UI
+ - `components`: the visual UI
  - `middlewares`: application logic
  - `store`: the application's models state
  - `service`: the connection with the api
