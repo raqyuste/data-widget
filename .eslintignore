@@ -1,0 +1,4 @@
+# ignore files with spam
+**/node_modules/**
+**/dist/**
+*.config.js
