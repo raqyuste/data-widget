@@ -1,8 +1,16 @@
 import './index.css';
 
+import store from '@/store';
+import { fetchData, selectFilterValue } from '@/store/actions';
+
 import Widget from '@/components/widget';
 import Filters from '@/components/filters';
 import Loader from '@/components/loader';
+
+const onApplyFilter = (query) => {
+  store.dispatch(selectFilterValue(query.value));
+  store.dispatch(fetchData(query));
+};
 
 const App = ({ isError, isLoadingData, filter, data }) => {
   return isError
