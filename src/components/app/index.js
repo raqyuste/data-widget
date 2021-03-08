@@ -7,6 +7,8 @@ import Widget from '@/components/widget';
 import Filters from '@/components/filters';
 import Loader from '@/components/loader';
 
+const WIDGET_TITLE = 'Total amount';
+
 const onApplyFilter = (query) => {
   store.dispatch(selectFilterValue(query.value));
   store.dispatch(fetchData(query));
@@ -26,7 +28,7 @@ const App = ({ isError, isLoadingData, filter, data }) => {
           ? Loader()
           : data
           ? Widget({
-              title: 'Total amount',
+              title: WIDGET_TITLE,
               counterData: data.amount,
               chartData: data.amountByVendor,
             })
