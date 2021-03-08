@@ -1,0 +1,21 @@
+.chart {
+  margin: 15px 0;
+}
+
+.bar {
+  position: relative;
+}
+
+.bar__fill {
+  padding: 3px 7px;
+  margin: 7px 0;
+  border-radius: 4px;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.bar__percentage{
+  position: absolute;
+  top: 3px;
+  right: 0;
+}
