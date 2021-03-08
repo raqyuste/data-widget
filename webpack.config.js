@@ -47,7 +47,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebPackPlugin({
-      title: 'Data Widgets',
+      title: 'Data Widget',
       meta: { viewport: 'width=device-width,initial-scale=1.0' },
     }),
   ],
